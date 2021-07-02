@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6) 100%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex-basis: 80%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 6rem;
+  margin: 0 2rem;
+}
+
+header form input {
+  width: 15rem;
+  height: 2.75rem;
+  background: #aaa;
+  color: black;
+  border: 0.1rem solid #666;
+  padding: 0.5rem 1rem;
+  /* font-size: 1.1rem; */
+  font-weight: bolder;
+  outline: none;
+}
+
+header form button {
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  height: 2.75rem;
+  background: black;
+  color: #ddd;
+  cursor: pointer;
+  border: 0.1rem solid #666;
+}
+form {
+  margin: 0 2rem;
+}
+.weather {
+  padding: 1rem 1.5rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: rgba(119, 136, 153, 0.623);
+  border-radius: 6px;
+  display: none;
+}
+
+footer {
+  margin: 0 10rem;
+  padding: 1rem;
+  flex-basis: 20%;
+  color: #fff;
+  border-top: 0.1rem solid #aaa;
+}
+
+footer h4 {
+  font-size: 0.7rem;
+  margin-bottom: 0.75rem;
+}
+
+footer h3 {
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: black;
+}
