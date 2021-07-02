@@ -59,6 +59,7 @@ header form input {
   /* font-size: 1.1rem; */
   font-weight: bolder;
   outline: none;
+  font-size: 1rem;
 }
 
 header form button {
@@ -69,6 +70,7 @@ header form button {
   color: #ddd;
   cursor: pointer;
   border: 0.1rem solid #666;
+  font-size: 1rem;
 }
 form {
   margin: 0 2rem;
@@ -111,6 +113,7 @@ footer p span {
 
 ::placeholder {
   color: black;
+  font-size: 1rem;
 }
 p {
   letter-spacing: 0.1ch;
@@ -154,4 +157,40 @@ i {
 .help {
   margin-top: -3rem;
   margin-left: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  header {
+    justify-content: center;
+    gap: 5rem;
+    width: 70%;
+  }
+  footer {
+    width: 70%;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 6.5rem;
+  }
+  header > * {
+    margin: 0;
+  }
+  .navbar {
+    margin-left: 0;
+  }
+  .about {
+    margin-left: 0;
+  }
+  .weather {
+    margin-left: 0;
+    margin-top: -2rem;
+  }
 }
