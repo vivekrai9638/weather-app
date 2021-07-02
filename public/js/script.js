@@ -13,7 +13,7 @@ form.addEventListener("submit", (e) => {
   const locationInput = input.value;
   console.log(locationInput);
 
-  fetch(`http://localhost:3000/weather?place=${locationInput}`)
+  fetch(`/weather?place=${locationInput}`)
     .then((response) => {
       // console.log(respose);
       return response.json();
