@@ -17,15 +17,12 @@
   <body>
     <header>
       {{>header}}
-      <form action="">
-        <input type="text" placeholder="Enter Your Location..." />
-        <button type="submit">Find my Weather</button>
-      </form>
-      <div class="weather">
-
-        <p class='message' id="msg-1"></p>
-        <p class="message" id="msg-2"></p>
-      </div>
+          
+      <div class="about">
+          <p>This application uses two APIs to get real time weather data of a location.</p>
+          <p>1. <a href="https://openweathermap.org">openweathermap</a> - to get realtime weather forecasting by feeding latitude and longitude of a location.</p>
+          <p>2. <a href="https://www.mapbox.com/">mapbox</a> - to get latitude and longitude of a location(Forward Geocoding).</p>
+      </>
     </header>
 
 {{>footer}}
